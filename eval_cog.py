@@ -8,6 +8,10 @@ class eval_cog(commands.Cog):
 
     @commands.command(name='eval')
     async def _eval(self, ctx: commands.Context, *, arg: str):
+        """Evaluate a some code on the host machine.
+        Only the bot owner can run this command.
+        """
+
         if not ctx.author.id == self.owner_id:
             await ctx.channel.send("Unauthorized user up in my grill! You trying to hack my Catch-a-Ride? Uncool bro, uncool.")
             return
