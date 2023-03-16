@@ -8,7 +8,7 @@ class eval_cog(commands.Cog):
 
     @commands.command(name='eval')
     async def _eval(self, ctx: commands.Context, *, arg: str):
-        """Evaluate a some code on the host machine.
+        """Evaluate some code on the host machine.
         Only the bot owner can run this command.
         """
 
